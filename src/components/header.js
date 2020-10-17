@@ -133,7 +133,7 @@ function Header() {
               </li>
             </Link>
 
-            <Link to="/bio/" activeClassName="active">
+            <Link to="/about/" activeClassName="active">
               <li>
                 <span className="anchor">About</span>
               </li>

@@ -3,6 +3,9 @@ import Slider from "react-slick"
 import Particles from "react-particles-js"
 import { Container } from "react-grid-system"
 
+const color1 = "#343336"
+const color2 = "#B408A4"
+
 function Intro() {
   const sliderSettings = {
     dots: true,
@@ -36,9 +39,9 @@ function Intro() {
       <Slider className="el-slider" {...sliderSettings}>
         <div className="slide">
           <div
-            className="image overlay-image"
+            className="image overlay-image "
             style={{
-              backgroundImage: `url('https://secureservercdn.net/198.71.233.214/489.7bf.myftpupload.com/wp-content/uploads/2017/07/SONStudiosInteriors2020-0092-scaled.jpg')`
+              backgroundImage: `url("https://secureservercdn.net/198.71.233.214/489.7bf.myftpupload.com/wp-content/uploads/2017/07/SONStudiosInteriors2020-0092-scaled.jpg")`
             }}
           ></div>
         </div>

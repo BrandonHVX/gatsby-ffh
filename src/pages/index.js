@@ -14,9 +14,9 @@ import Intro from "../components/Intro"
 // import BlogSinglePost from "./BlogSinglePost"
 
 import styled, { keyframes } from "styled-components"
-import { fadeInRight } from "react-animations"
+import { fadeIn, zoomIn } from "react-animations"
 
-const FadeInRightAnimation = keyframes`${fadeInRight}`
+const FadeInRightAnimation = keyframes`${fadeIn}`
 
 const FadeInRightDiv = styled.div`
   animation: 1s ${FadeInRightAnimation};
