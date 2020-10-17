@@ -12,7 +12,6 @@ import Intro from "../components/Intro"
 // import Portfolio from "./Portfolio"
 // import Testimonial from "./Testimonial"
 // import BlogSinglePost from "./BlogSinglePost"
-// Components
 
 import styled, { keyframes } from "styled-components"
 import { fadeInRight } from "react-animations"
