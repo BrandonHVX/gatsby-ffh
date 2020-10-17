@@ -1,22 +1,41 @@
-import React from "react"
-import { Link } from "gatsby"
+import ReactDOM from "react-dom"
+import React, { useEffect } from "react"
+import { Route, Redirect, useRouteMatch } from "react-router-dom"
 
+// Sections
+// import Blog from "./Blog"
+import About from "../components/About"
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Intro from "../components/Intro"
+import Header from "../components/Header"
+// import Resume from "./Resume"
+// import Service from "./Service"
+// import Contact from "./Contact"
+// import Portfolio from "./Portfolio"
+// import Testimonial from "./Testimonial"
+// import BlogSinglePost from "./BlogSinglePost"
+// Components
+import { fadeIn } from "react-animations"
+import Helmet from "../components/common/Helmet"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+import RedirectAs404 from "../components/common/RedirectAs404"
+import styled, { keyframes } from "styled-components"
+import { fadeInRight } from "react-animations"
 
-export default IndexPage
+const FadeInRightAnimation = keyframes`${fadeInRight}`
+
+const FadeInRightDiv = styled.div`
+  animation: 1s ${FadeInRightAnimation};
+`
+
+function Home() {
+  return (
+    <Layout>
+      <FadeInRightDiv>
+        <Intro />
+      </FadeInRightDiv>
+    </Layout>
+  )
+}
+
+export default Home
