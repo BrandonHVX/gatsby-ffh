@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Header from "./Header"
 import { useStaticQuery, graphql } from "gatsby"
-import "../index.scss"
+import "./index.scss"
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
