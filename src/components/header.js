@@ -78,7 +78,7 @@ function Header() {
         </ul>
         <ul className="header-menu">
           <li>
-            <Link to="/bio/" activeClassName="active">
+            <Link to="/about/" activeClassName="active">
               About
             </Link>
           </li>
